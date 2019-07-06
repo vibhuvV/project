@@ -1,5 +1,8 @@
 <?php 
     include_once "connection.php";
+    if(!isset($_SESSION['username'])){
+        header('location: http://localhost/project/index.php');
+    }
     $user_name = $_SESSION['username'];
     $sqlquery = mysqli_query($conn, "select * from userinfo where username = '$user_name'");
     $sqlArray = mysqli_fetch_assoc($sqlquery);
