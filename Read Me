@@ -1,0 +1,4 @@
+This is project management system created using HTML, CSS, JavaScript, Jquery and PHP based on Access Control System.
+
+
+NOTE: If you are using this project the don't forget to import database file in your database and change your database username password in connnection.php file.
